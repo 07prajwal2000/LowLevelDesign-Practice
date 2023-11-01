@@ -1,0 +1,16 @@
+@LeaderBoard.API_HostAddress = https://localhost:7144
+
+GET {{LeaderBoard.API_HostAddress}}/top-k?k=10
+###
+
+POST {{LeaderBoard.API_HostAddress}}/add-score
+Content-Type: application/json
+
+{
+    "name": "bharath",
+    "score": 92
+}
+###
+
+GET {{LeaderBoard.API_HostAddress}}/reset?name=renu
+###
